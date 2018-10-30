@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         //Obtain the size of the TextView;
         textViewMessage = findViewById(R.id.textViewMessage);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        size = textViewMessage.getTextSize();
+        size = textViewMessage.getTextSize()/getResources().getDisplayMetrics().density;
 
         setSupportActionBar(toolbar);
 
